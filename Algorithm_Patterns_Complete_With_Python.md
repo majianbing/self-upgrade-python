@@ -1157,4 +1157,4 @@ def countBits(n: int) -> List[int]:
 
 ---
 
-**Good luck with your interviews, Mason! 🚀**
+**Good luck with your interviews! 🚀**
