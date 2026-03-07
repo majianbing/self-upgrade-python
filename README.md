@@ -96,3 +96,19 @@ flowchart TD
 ## 🧠 The Mindset: Trigger -> Template
 
 When reading a problem, look for keywords (**Triggers**) to identify the underlying pattern.
+
+
+
+## 🛠️ The Global Built-in Mapping: Java vs. Python
+
+| **Data Structure / Pattern** | **Java (Standard)**                            | **Python (Standard/Built-in)**  | **Python "Cheat Code"**            |
+| ---------------------------- | ---------------------------------------------- | ------------------------------- | ---------------------------------- |
+| **Dynamic Array**            | `ArrayList<T>`                                 | `list`                          | `list.append()`, `list.pop()`      |
+| **Hash Map**                 | `HashMap<K, V>`                                | `dict`                          | `{}` or `collections.defaultdict`  |
+| **Hash Set**                 | `HashSet<T>`                                   | `set`                           | `set()` with $O(1)$ `in` checks    |
+| **Double-Ended Queue**       | `ArrayDeque<T>`                                | `collections.deque`             | `popleft()`, `appendleft()`        |
+| **Min-Priority Queue**       | `PriorityQueue<T>`                             | `heapq` (functions)             | `heappush(list, val)`              |
+| **Max-Priority Queue**       | `PriorityQueue<T>(Collections.reverseOrder())` | `heapq` (negate values)         | `heappush(list, -val)`             |
+| **Ordered Map**              | `LinkedHashMap<K, V>`                          | `collections.OrderedDict`       | Remembers insertion order.         |
+| **Sorted Map**               | `TreeMap<K, V>`                                | `bisect` or `sortedcontainers`* | `bisect.insort()`                  |
+| **Frequency Counter**        | `Map<K, Integer>` + loop                       | `collections.Counter`           | `Counter(iterable).most_common(k)` |
